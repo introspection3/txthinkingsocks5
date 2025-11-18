@@ -67,6 +67,7 @@ func NewClassicServer(addr, ip string, accounts map[string]string, tcpTimeout, u
 	cs := cache.New(cache.NoExpiration, cache.NoExpiration)
 	cs1 := cache.New(cache.NoExpiration, cache.NoExpiration)
 	cs2 := cache.New(cache.NoExpiration, cache.NoExpiration)
+
 	s := &Server{
 		Method:                        m,
 		Accounts:                      accounts,
